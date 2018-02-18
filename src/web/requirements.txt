@@ -1,23 +1,32 @@
-### This file contains requiremenets for Drapo web project. Install them with `pip install -r requirements.txt`
-
-### Django stuff
-Django >= 1.10
-django-choices
-django-markdown-deux
-python-postmark
-django-hijack
-django-hijack-admin
-django-ipware
-django-polymorphic>=1.0b1
-django-relativefilepathfield
-django-sortedm2m
-django-bootstrap3-datetimepicker-2
-django-bootstrap-form
-
-# Other python stuff
-requests >= 2.7.0
-bs4
-python-social-auth
-cached-property
-markdown
-pytz
+beautifulsoup4==4.5.3
+bs4==0.0.1
+cached-property==1.3.0
+defusedxml==0.5.0
+Django==1.10.5
+django-bootstrap-form==3.2.1
+django-bootstrap3-datetimepicker-2==2.4.2
+django-choices==1.5.0
+django-compat==1.0.13
+django-hijack==2.1.2
+django-hijack-admin==2.1.2
+django-ipware==1.1.6
+django-markdown-deux==1.0.5
+django-polymorphic==1.1
+django-relativefilepathfield==1.0.3
+django-sortedm2m==1.3.3
+gitdb2==2.0.0
+GitPython==2.1.3
+Markdown==2.6.8
+markdown2==2.3.3
+oauthlib==2.0.1
+PyJWT==1.4.2
+python-postmark==0.4.12
+python-social-auth==0.3.6
+python3-openid==3.0.10
+pytz==2016.10
+PyYAML==3.12
+requests==2.13.0
+requests-oauthlib==0.8.0
+six==1.10.0
+smmap2==2.0.1
+social-auth-core==1.2.0
