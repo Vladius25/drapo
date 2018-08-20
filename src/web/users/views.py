@@ -8,6 +8,7 @@ from django.db.models import Q
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
 
+from users.decorators import staff_required
 from . import forms
 from . import models
 from contests.models import Contest, IndividualParticipant
@@ -52,7 +53,7 @@ def login(request):
         'form': form
     })
 
-
+@staff_required
 def register(request):
     if request.method == 'POST':
         form = forms.RegisterForm(request.POST)
