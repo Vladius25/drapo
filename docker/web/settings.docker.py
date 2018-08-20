@@ -254,46 +254,29 @@ CACHES = {
 QCTF_CONTEST_ID = 1
 
 QCTF_CARD_LAYOUT = [
-    [
-        ('permanent-302', '/static/statement_img/podifruxx.png'),
-        ('storage', '/static/statement_img/smvcnid.png'),
-    ],
-    [
-        ('make-some-noise', None),
-        ('cipher', None),
-        ('weird-video', None),
-    ],
-    [
-        ('getflagchar', '/static/statement_img/gohdjhr.png'),
-        ('minecrypt', '/static/statement_img/msslrrijc.png'),
-    ],
-    [
-        ('unpack-reverse', None),
-        ('cats-vs-dogs', None),
-        ('notemaster', None),
-    ],
-    [
-        ('bank', '/static/statement_img/blfpowdm.png'),
-        ('passengers-1', '/static/statement_img/psgrttry.png'),
-    ],
-    [
-        ('browser-mining', None),
-        ('auth-system', None),
-        ('obscure-archive', None),
-    ],
-    [
-        ('passengers-2', None),
-        ('python-vm', None),
-        ('quirky-casino', None),
-    ],
+    [('qr', None), ('it-knows', None), ('caesar', None), ('strange-archive', None)],
+    [('a-plus-b', None), ('empty-website', None), ('brute-zip', None)],
+    [('im-hiding', None), ('logo', None)],
+    [('youtube-subtitles', None), ('bassboosted', None), ('printer', None)],
+    [('true-reverse', None), ('hackers-pc', None)],
+    [('xortop', None), ('hexandxor', None), ('rsa', None)],
+    [('usbrip', None), ('restore-usb', None), ('new-admin', None)],
+    [('minecraft', None)],
+    [('calc-1',None), ('nooisee',None), ('calc-2',None), ('blind-robot',None)],
+    [('red-button',None), ('code-lock',None), ('terminal',None), ('broadcast',None)],
+    [('glue', None)]
 ]
 
 # Place tasks ordered by cost. They will be shown in the QCTF scoreboard in the same order.
 QCTF_TASK_CATEGORIES = {
-    'Crypto': ['cipher', 'minecrypt'],
-    'Forensics': ['weird-video', 'bank'],
-    'PPC': ['quirky-casino', 'browser-mining', 'cats-vs-dogs'],
-    'PWN': ['passengers-1', 'passengers-2'],
-    'Reverse': ['getflagchar', 'obscure-archive', 'unpack-reverse', 'python-vm'],
-    'Web': ['notemaster', 'permanent-302', 'make-some-noise', 'storage', 'auth-system'],
+    'Warmup': ['qr', 'it-knows', 'caesar', 'strange-archive', 'a-plus-b', 'empty-website', 'brute-zip'],
+    'Stego': ['im-hiding', 'logo', 'youtube-subtitles', 'bassboosted', 'printer'],
+    'Reverse': ['true-reverse', 'hackers-pc'],
+    'Crypto': ['xortop', 'hexandxor', 'rsa'],
+    'Admin': ['usbrip', 'restore-usb', 'new-admin'],
+    'Joy': ['minecraft'],
+    'PPC': ['calc-1', 'nooisee', 'calc-2', 'blind-robot'],
+    'Web': ['red-button', 'code-lock', 'terminal', 'broadcast'], 
+    'Forensics': ['glue']
+    
 }
