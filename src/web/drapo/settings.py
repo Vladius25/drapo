@@ -215,19 +215,29 @@ LANGUAGES = [
 QCTF_CONTEST_ID = 1
 
 QCTF_CARD_LAYOUT = [
-    [
-        ('bank', 'http://crlaw.com/news/wp-content/uploads/2017/05/brandon-k-jones-profile-image-180x198.jpg'),
-        ('auth-system', 'http://crlaw.com/news/wp-content/uploads/2017/05/brandon-k-jones-profile-image-180x198.jpg'),
-    ],
-    [('cats-vs-dogs', None), ('make-some-noise', None), ('permanent-302', None)],
-    [('getflagchar', None), ('cipher', None), ('python-vm', None)],
+    [('qr', None), ('it-knows', None), ('caesar', None), ('strange-archive', None)],
+    [('a-plus-b', None), ('empty-website', None), ('brute-zip', None)],
+    [('im-hiding', None), ('logo', None)],
+    [('youtube-subtitles', None), ('bassboosted', None), ('printer', None)],
+    [('true-reverse', None), ('hackers-pc', None)],
+    [('xortop', None), ('hexandxor', None), ('rsa', None)],
+    [('usbrip', None), ('restore-usb', None), ('new-admin', None)],
+    [('minecraft', None)],
+    [('calc-1',None), ('nooisee',None), ('calc-2',None), ('blind-robot',None)],
+    [('red-button',None), ('code-lock',None), ('terminal',None), ('broadcast',None)],
+    [('glue', None)]
 ]
 
 # Place tasks ordered by cost. They will be shown in the QCTF scoreboard in the same order.
 QCTF_TASK_CATEGORIES = {
-    'Forensics': ['bank'],
-    'Web': ['auth-system', 'make-some-noise', 'permanent-302'],
-    'PPC': ['cats-vs-dogs'],
-    'Reverse': ['getflagchar', 'python-vm'],
-    'Crypto': ['cipher'],
+    'Warmup': ['qr', 'it-knows', 'caesar', 'strange-archive', 'a-plus-b', 'empty-website', 'brute-zip'],
+    'Stego': ['im-hiding', 'logo', 'youtube-subtitles', 'bassboosted', 'printer'],
+    'Reverse': ['true-reverse', 'hackers-pc'],
+    'Crypto': ['xortop', 'hexandxor', 'rsa'],
+    'Admin': ['usbrip', 'restore-usb', 'new-admin'],
+    'Joy': ['minecraft'],
+    'PPC': ['calc-1', 'nooisee', 'calc-2', 'blind-robot'],
+    'Web': ['red-button', 'code-lock', 'terminal', 'broadcast'], 
+    'Forensics': ['glue']
+    
 }
