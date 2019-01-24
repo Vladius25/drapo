@@ -1,23 +1,12 @@
-*** Installation for Ubuntu or Debian systems ***
+*** Installation docker image ***
 
-apt install python3 python3-pip python-virtualenv git nginx uwsgi uwsgi-plugin-python3
+docker-compose up -d
 
-useradd -m -g www-data drapo
-su drapo
+To create super user, log into your running docker container:
 
-# Follow commands need to be run as `drapo' user
-cd ~
-git clone git@github.com:andgein/drapo.git
-# Or git clone https://github.com/andgein/drapo.git
+docker-compose exec -it <CONTAINER_ID> bash
 
-# Create and active virtual environment
-virtualenv -p /usr/bin/python3 venv
-source venv/bin/activate
+And run:
 
-cd drapo
-cd src/web
-# Install requirements
-pip3 install -r requirements.txt
-
-
+python manage.py createsuperuser
 
