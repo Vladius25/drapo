@@ -4,8 +4,9 @@ services:
   drapo:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
+    user: root
     volumes:
-      - vol:/drapo
+      - ./src/web:/drapo:z
     ports:
       - "80:8000"
 volumes:
